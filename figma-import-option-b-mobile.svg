@@ -1,0 +1,52 @@
+<svg width="390" height="1380" viewBox="0 0 390 1380" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="390" height="1380" fill="#0D120E"/>
+  <style>
+    .mono { font-family: "IBM Plex Mono", "Courier New", monospace; }
+    .green { fill: #B1FF4F; }
+    .amber { fill: #FFA841; }
+    .white { fill: #FFFFFF; }
+    .dark { fill: #0D120E; }
+    .small { font-size: 13px; }
+    .body { font-size: 15px; }
+    .title { font-size: 28px; font-weight: 600; }
+    .row { font-size: 19px; }
+  </style>
+  <text class="mono green small" x="18" y="34">JOSEPH YORK-WESTCOTT OS</text>
+  <text class="mono green body" x="18" y="92">
+    <tspan x="18" dy="0">WELCOME...</tspan>
+    <tspan x="18" dy="24">LOADING...</tspan>
+    <tspan x="18" dy="24">cd $/PORTFOLIO.sh !!!</tspan>
+  </text>
+  <rect x="18" y="190" width="354" height="210" fill="#BABAAE" stroke="#B1FF4F"/>
+  <text class="mono white title" x="18" y="464">
+    <tspan x="18" dy="0">ARCHIVE OF SIGNALS:</tspan>
+    <tspan x="18" dy="34">IDENTITY x IMAGE</tspan>
+  </text>
+  <text class="mono amber small" x="18" y="542">[ VIEW_WORK ]  [ EMAIL ]</text>
+  <line x1="0" y1="588" x2="390" y2="588" stroke="#B1FF4F"/>
+  <g class="mono">
+    <text class="amber small" x="18" y="640">010</text>
+    <text class="amber row" x="76" y="645">ARCHIVE OF SIGNALS</text>
+    <text class="green small" x="330" y="640">42</text>
+    <text class="white small" x="18" y="716">009</text>
+    <text class="white row" x="76" y="721">FIELD NOTES</text>
+    <text class="green small" x="330" y="716">24</text>
+    <text class="white small" x="18" y="792">008</text>
+    <text class="white row" x="76" y="797">COMMON ROOM</text>
+    <text class="green small" x="330" y="792">102</text>
+    <text class="white small" x="18" y="868">007</text>
+    <text class="white row" x="76" y="873">MOVING STILL</text>
+    <text class="green small" x="330" y="868">63</text>
+    <text class="white small" x="18" y="944">006</text>
+    <text class="white row" x="76" y="949">MATERIAL INDEX</text>
+    <text class="green small" x="330" y="944">13</text>
+  </g>
+  <rect x="18" y="1040" width="354" height="250" fill="#F5F2E8" stroke="#B1FF4F"/>
+  <text class="mono dark small" x="34" y="1073">Finder / selected-work</text>
+  <line x1="18" y1="1094" x2="372" y2="1094" stroke="#0D120E"/>
+  <text class="mono dark small" x="34" y="1138">
+    <tspan x="34" dy="0">identity-system-FINAL.pdf</tspan>
+    <tspan x="34" dy="28">poster-export-600dpi.tif</tspan>
+    <tspan x="34" dy="28">notes_for_launch.txt</tspan>
+  </text>
+</svg>

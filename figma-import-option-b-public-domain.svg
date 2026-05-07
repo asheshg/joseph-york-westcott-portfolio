@@ -1,0 +1,76 @@
+<svg width="1440" height="1580" viewBox="0 0 1440 1580" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1440" height="1580" fill="#0D120E"/>
+  <style>
+    .mono { font-family: "IBM Plex Mono", "Courier New", monospace; }
+    .green { fill: #B1FF4F; }
+    .amber { fill: #FFA841; }
+    .white { fill: #FFFFFF; }
+    .dark { fill: #0D120E; }
+    .small { font-size: 15px; }
+    .body { font-size: 18px; }
+    .hero { font-size: 46px; font-weight: 600; }
+    .archive { font-size: 27px; }
+  </style>
+  <text class="mono green small" x="30" y="42">JOSEPH YORK-WESTCOTT OS</text>
+  <text class="mono green body" x="30" y="106">
+    <tspan x="30" dy="0">WELCOME TO VISUAL COMMUNICATION OS...</tspan>
+    <tspan x="30" dy="26">LOADING...</tspan>
+    <tspan x="30" dy="26">apt-get install image-language</tspan>
+    <tspan x="30" dy="26">cd $/PORTFOLIO-INDEX.sh !!!</tspan>
+  </text>
+  <rect x="800" y="68" width="520" height="360" fill="#BABAAE" stroke="#B1FF4F"/>
+  <g stroke="#B1FF4F" opacity="0.55">
+    <line x1="800" y1="88" x2="1320" y2="88"/>
+    <line x1="800" y1="138" x2="1320" y2="138"/>
+    <line x1="800" y1="188" x2="1320" y2="188"/>
+    <line x1="800" y1="238" x2="1320" y2="238"/>
+    <line x1="800" y1="288" x2="1320" y2="288"/>
+    <line x1="800" y1="338" x2="1320" y2="338"/>
+    <line x1="800" y1="388" x2="1320" y2="388"/>
+  </g>
+  <text class="mono white hero" x="30" y="330">
+    <tspan x="30" dy="0">ARCHIVE OF SIGNALS:</tspan>
+    <tspan x="30" dy="54">IDENTITY x IMAGE SYSTEMS</tspan>
+  </text>
+  <text class="mono amber body" x="34" y="448">[ VIEW_WORK ]     [ EMAIL_JOSEPH ]</text>
+  <line x1="0" y1="510" x2="1440" y2="510" stroke="#B1FF4F"/>
+  <text class="mono green body" x="30" y="564">ARCHIVE</text>
+  <text class="mono green body" x="1180" y="564">Launching Soon</text>
+  <g class="mono">
+    <text class="amber body" x="30" y="628">010</text>
+    <text class="amber archive" x="160" y="632">ARCHIVE OF SIGNALS</text>
+    <rect x="720" y="602" width="120" height="52" fill="#BABAAE" stroke="#B1FF4F"/>
+    <text class="green body" x="1260" y="628">42</text>
+    <text class="white body" x="30" y="720">009</text>
+    <text class="white archive" x="160" y="724">FIELD NOTES</text>
+    <text class="green body" x="1260" y="720">24</text>
+    <text class="white body" x="30" y="812">008</text>
+    <text class="white archive" x="160" y="816">COMMON ROOM</text>
+    <rect x="720" y="786" width="120" height="52" fill="#BABAAE" stroke="#B1FF4F"/>
+    <text class="green body" x="1260" y="812">102</text>
+    <text class="white body" x="30" y="904">007</text>
+    <text class="white archive" x="160" y="908">MOVING STILL</text>
+    <text class="green body" x="1260" y="904">63</text>
+    <text class="white body" x="30" y="996">006</text>
+    <text class="white archive" x="160" y="1000">MATERIAL INDEX</text>
+    <rect x="720" y="970" width="120" height="52" fill="#BABAAE" stroke="#B1FF4F"/>
+    <text class="green body" x="1260" y="996">13</text>
+    <text class="white body" x="30" y="1088">005</text>
+    <text class="white archive" x="160" y="1092">SOFT ARCHITECTURE</text>
+    <text class="green body" x="1260" y="1088">136</text>
+  </g>
+  <rect x="880" y="870" width="430" height="430" fill="#F5F2E8" stroke="#B1FF4F"/>
+  <text class="mono dark small" x="900" y="910">Finder / selected-work</text>
+  <line x1="880" y1="930" x2="1310" y2="930" stroke="#0D120E"/>
+  <text class="mono dark small" x="900" y="974">
+    <tspan x="900" dy="0">AIRJORDAN2low_white_SPv5.jpg</tspan>
+    <tspan x="900" dy="30">Screen Shot 2026-05-07.png</tspan>
+    <tspan x="900" dy="30">identity-system-FINAL.pdf</tspan>
+    <tspan x="900" dy="30">poster-export-600dpi.tif</tspan>
+    <tspan x="900" dy="30">notes_for_launch.txt</tspan>
+  </text>
+  <text class="mono green small" x="30" y="1408">
+    <tspan x="30" dy="0">Raw metadata, command-line copy, file/finder metaphors, and loud archive counts</tspan>
+    <tspan x="30" dy="24">make this route feel less polished and more culturally charged.</tspan>
+  </text>
+</svg>
