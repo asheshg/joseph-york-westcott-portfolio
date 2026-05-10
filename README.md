@@ -1,6 +1,12 @@
-# Joseph York-Westcott Portfolio
+﻿# Joseph York-Westcott Portfolio
 
-A static sample portfolio site inspired by the sparse editorial structure of `consul.studio`.
+A static portfolio site for Joseph York-Westcott, structured around Work, Play, and About Me.
+
+## Site Structure
+
+- `Work`: homepage section with four placeholder project rows ready for real case-study details.
+- `Play`: experimental section for passion projects, hobby work, type studies, image tests, and loose visual explorations.
+- `About Me`: bio paragraphs plus direct links for email, Instagram, and resume.
 
 ## Run Locally
 
@@ -8,7 +14,7 @@ Open `index.html` directly in a browser, or serve the folder with any static ser
 
 ## Publish Temporarily on Vercel
 
-### Option A: Vercel Dashboard
+### Vercel Dashboard
 
 1. Create a GitHub repository and push these files.
 2. Go to Vercel and choose `Add New Project`.
@@ -20,7 +26,7 @@ Open `index.html` directly in a browser, or serve the folder with any static ser
 
 Vercel will give you a temporary URL like `project-name.vercel.app`.
 
-### Option B: Vercel CLI
+### Vercel CLI
 
 If Node.js is installed:
 
@@ -43,19 +49,10 @@ npx vercel deploy --prod
 5. If using Vercel nameservers, update nameservers at the registrar.
 6. If keeping registrar DNS, add the `A` and `CNAME` records Vercel provides.
 
-Replace the placeholder email in `index.html` before publishing publicly.
+Replace the placeholder email, Instagram URL, and resume link in `index.html` before publishing publicly.
 
 ## Figma Reference
 
 Reference file created in Figma:
 
 https://www.figma.com/design/XW38fsUaXfNaboxsds8KVg
-
-Alternative direction notes are in `figma-alternative-directions.md`.
-
-Import-ready SVG frames:
-
-- `figma-import-option-a-ransmeier.svg`
-- `figma-import-option-a-mobile.svg`
-- `figma-import-option-b-public-domain.svg`
-- `figma-import-option-b-mobile.svg`
