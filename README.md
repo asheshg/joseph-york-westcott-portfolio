@@ -5,6 +5,9 @@ A static portfolio site for Joseph York-Westcott, structured around Work, Play, 
 ## Site Structure
 
 - `Work`: homepage section with four placeholder project rows ready for real case-study details.
+- `work/butu-magazine.html`: project page for BUTU Magazine Issue 1.
+- `work/technicolour.html`: project page for Technicolour.
+- `work/placeholder-3.html` and `work/placeholder-4.html`: reserved project pages for future work.
 - `Play`: experimental section for passion projects, hobby work, type studies, image tests, and loose visual explorations.
 - `About Me`: bio paragraphs plus direct links for email, Instagram, and resume.
 
