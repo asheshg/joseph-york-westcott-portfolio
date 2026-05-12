@@ -491,6 +491,32 @@ h1 {
   color: var(--inverse-ink);
 }
 
+.case-home-cta {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: var(--gutter);
+  align-items: end;
+  min-height: clamp(220px, 30vw, 420px);
+  padding: var(--gutter);
+  border-top: 1px solid var(--rule);
+}
+
+.case-home-cta span {
+  color: var(--muted);
+}
+
+.case-home-cta a {
+  font-family: var(--serif);
+  font-size: clamp(42px, 8vw, 140px);
+  line-height: 0.85;
+  letter-spacing: -0.075em;
+  text-transform: none;
+}
+
+.case-home-cta a:hover {
+  color: var(--muted);
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -538,6 +564,7 @@ h1 {
 
   .site-header,
   .site-footer,
+  .case-home-cta,
   .hero,
   .hero-copy,
   .about-section,
