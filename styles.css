@@ -234,8 +234,23 @@ h1 {
 }
 
 .project-row a:hover {
-  background: var(--inverse);
-  color: var(--inverse-ink);
+  background: var(--project-hover-bg, var(--inverse));
+  color: var(--project-hover-ink, var(--inverse-ink));
+}
+
+.project-row-butu {
+  --project-hover-bg: #153f8f;
+  --project-hover-ink: #f1e7bd;
+}
+
+.project-row-technicolour {
+  --project-hover-bg: #f2d348;
+  --project-hover-ink: #202a96;
+}
+
+.project-row-placeholder {
+  --project-hover-bg: #d9d3c5;
+  --project-hover-ink: #111111;
 }
 
 .project-thumb,
