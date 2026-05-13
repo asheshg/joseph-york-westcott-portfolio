@@ -443,7 +443,7 @@ h1 {
   grid-area: title;
   max-width: none;
   padding-right: calc(var(--gutter) * 1.5);
-  font-size: clamp(55px, 10.6vw, 165px);
+  font-size: clamp(48px, 8.4vw, 132px);
 }
 
 .case-hero.image-led p {
@@ -914,6 +914,11 @@ h1 {
 
   .case-hero h1 {
     min-height: auto;
+  }
+
+  .case-hero.image-led h1 {
+    font-size: clamp(40px, 11vw, 72px);
+    padding-right: var(--gutter);
   }
 
   .case-hero-image {
