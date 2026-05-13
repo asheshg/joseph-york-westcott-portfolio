@@ -59,6 +59,33 @@ a {
   backdrop-filter: blur(12px);
 }
 
+.project-butu {
+  --paper: #f1e7bd;
+  --ink: #153f8f;
+  --muted: #9d4f48;
+  --rule: #d36a54;
+  --image: #d9b489;
+  --image-dark: #2f4f99;
+  --inverse: #153f8f;
+  --inverse-ink: #f5d8d1;
+}
+
+.project-technicolour {
+  --paper: #202a96;
+  --ink: #f2d348;
+  --muted: #ff7c41;
+  --rule: #ef4f3d;
+  --image: #3141b6;
+  --image-dark: #111744;
+  --inverse: #f2d348;
+  --inverse-ink: #202a96;
+}
+
+.project-butu .site-header,
+.project-technicolour .site-header {
+  background: color-mix(in srgb, var(--paper) 88%, transparent);
+}
+
 .brand,
 .site-footer div {
   display: flex;
@@ -380,16 +407,30 @@ h1 {
 }
 
 .case-hero.image-led {
-  grid-template-columns: minmax(190px, 0.45fr) minmax(0, 0.9fr) minmax(280px, 0.7fr);
+  grid-template-areas:
+    "meta title image"
+    "meta intro image";
+  grid-template-columns: minmax(170px, 0.38fr) minmax(0, 1.05fr) minmax(260px, 0.62fr);
+  grid-template-rows: 1fr auto;
+  align-items: stretch;
+}
+
+.case-hero.image-led .case-meta {
+  grid-area: meta;
+}
+
+.case-hero.image-led h1 {
+  grid-area: title;
+  max-width: 880px;
+  font-size: clamp(58px, 8.8vw, 134px);
 }
 
 .case-hero.image-led p {
-  grid-column: 2;
+  grid-area: intro;
 }
 
 .case-hero-image {
-  grid-column: 3;
-  grid-row: 1 / span 3;
+  grid-area: image;
   width: 100%;
   height: 100%;
   min-height: calc(82svh - 58px);
@@ -517,10 +558,13 @@ h1 {
 .phone-grid img,
 .portrait-grid img,
 .album-grid img,
-.cover-facts img {
+.cover-facts img,
+.asset-strip img,
+.case-hero-image {
   display: block;
   width: 100%;
   object-fit: cover;
+  cursor: zoom-in;
 }
 
 .spread-grid img {
@@ -646,6 +690,103 @@ h1 {
   color: var(--muted);
 }
 
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(16px, 3vw, 42px);
+  background: rgba(10, 10, 10, 0.86);
+  color: #f7f1e8;
+}
+
+.lightbox.is-open {
+  display: flex;
+}
+
+.lightbox__stage {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: min(100%, 1480px);
+  height: min(100%, 900px);
+  overflow: auto;
+}
+
+.lightbox__image {
+  max-width: 92vw;
+  max-height: 82vh;
+  transform: scale(var(--zoom, 1));
+  transform-origin: center;
+  transition: transform 160ms ease;
+}
+
+.lightbox__button,
+.lightbox__zoom {
+  border: 1px solid currentColor;
+  background: rgba(15, 15, 15, 0.62);
+  color: inherit;
+  font: inherit;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.lightbox__button {
+  position: absolute;
+  z-index: 2;
+  width: 44px;
+  height: 44px;
+}
+
+.lightbox__button:hover,
+.lightbox__zoom:hover {
+  background: #f7f1e8;
+  color: #111;
+}
+
+.lightbox__close {
+  top: 18px;
+  right: 18px;
+}
+
+.lightbox__prev {
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.lightbox__next {
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.lightbox__toolbar {
+  position: absolute;
+  left: 50%;
+  bottom: 18px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transform: translateX(-50%);
+}
+
+.lightbox__zoom {
+  min-width: 44px;
+  min-height: 36px;
+  padding: 8px 12px;
+}
+
+.lightbox__count {
+  min-width: 86px;
+  text-align: center;
+  color: inherit;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -699,7 +840,6 @@ h1 {
   .about-section,
   .play-grid,
   .case-hero,
-  .case-hero.image-led,
   .case-section.two-column,
   .case-facts,
   .case-image-grid,
@@ -711,6 +851,16 @@ h1 {
   .portrait-grid,
   .album-grid {
     grid-template-columns: 1fr;
+  }
+
+  .case-hero.image-led {
+    grid-template-areas:
+      "meta"
+      "image"
+      "title"
+      "intro";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
   }
 
   .site-header {
@@ -745,10 +895,18 @@ h1 {
   }
 
   .case-hero-image {
-    grid-row: auto;
     min-height: 420px;
     border-left: 0;
     border-top: 1px solid var(--rule);
+  }
+
+  .lightbox__button {
+    width: 38px;
+    height: 38px;
+  }
+
+  .lightbox__toolbar {
+    bottom: 12px;
   }
 
   .case-image.large,
