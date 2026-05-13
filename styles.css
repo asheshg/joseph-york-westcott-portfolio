@@ -390,7 +390,12 @@ h1 {
 .case-hero h1 {
   align-self: end;
   max-width: 1180px;
-  font-size: clamp(70px, 13.5vw, 190px);
+  font-size: clamp(67px, 13.3vw, 187px);
+  text-wrap: balance;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .case-hero p {
@@ -423,7 +428,7 @@ h1 {
   grid-area: title;
   max-width: none;
   padding-right: calc(var(--gutter) * 1.5);
-  font-size: clamp(58px, 10.8vw, 168px);
+  font-size: clamp(55px, 10.6vw, 165px);
 }
 
 .case-hero.image-led p {
