@@ -408,10 +408,10 @@ h1 {
 
 .case-hero.image-led {
   grid-template-areas:
-    "meta title image"
+    "meta title title"
     "meta intro image";
-  grid-template-columns: minmax(170px, 0.38fr) minmax(0, 1.05fr) minmax(260px, 0.62fr);
-  grid-template-rows: 1fr auto;
+  grid-template-columns: minmax(170px, 0.38fr) minmax(0, 1fr) minmax(260px, 0.72fr);
+  grid-template-rows: auto minmax(360px, 1fr);
   align-items: stretch;
 }
 
@@ -421,8 +421,9 @@ h1 {
 
 .case-hero.image-led h1 {
   grid-area: title;
-  max-width: 880px;
-  font-size: clamp(58px, 8.8vw, 134px);
+  max-width: none;
+  padding-right: calc(var(--gutter) * 1.5);
+  font-size: clamp(58px, 10.8vw, 168px);
 }
 
 .case-hero.image-led p {
@@ -433,34 +434,10 @@ h1 {
   grid-area: image;
   width: 100%;
   height: 100%;
-  min-height: calc(82svh - 58px);
+  min-height: clamp(260px, 32vw, 520px);
   object-fit: cover;
   border-left: 1px solid var(--rule);
-}
-
-.project-technicolour .case-hero.image-led {
-  grid-template-areas:
-    "meta image"
-    "meta title"
-    "meta intro";
-  grid-template-columns: minmax(170px, 0.34fr) minmax(0, 1.66fr);
-  grid-template-rows: minmax(360px, 48svh) auto auto;
-}
-
-.project-technicolour .case-hero.image-led h1 {
-  max-width: none;
-  font-size: clamp(58px, 12vw, 176px);
-  padding-top: clamp(28px, 4vw, 64px);
-}
-
-.project-technicolour .case-hero-image {
-  width: 100%;
-  height: 100%;
-  min-height: 0;
-  border-left: 0;
-  border-bottom: 1px solid var(--rule);
-  object-fit: contain;
-  background: var(--image-dark);
+  border-top: 1px solid var(--rule);
 }
 
 .case-image-grid {
@@ -881,18 +858,8 @@ h1 {
   .case-hero.image-led {
     grid-template-areas:
       "meta"
-      "image"
       "title"
-      "intro";
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto;
-  }
-
-  .project-technicolour .case-hero.image-led {
-    grid-template-areas:
-      "meta"
       "image"
-      "title"
       "intro";
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto;
@@ -929,8 +896,7 @@ h1 {
     min-height: auto;
   }
 
-  .case-hero-image,
-  .project-technicolour .case-hero-image {
+  .case-hero-image {
     min-height: 420px;
     border-left: 0;
     border-top: 1px solid var(--rule);
