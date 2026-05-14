@@ -1,6 +1,6 @@
-﻿# Joseph York-Westcott Portfolio
+# Joseph Yorke-Westcott Portfolio
 
-A static portfolio site for Joseph York-Westcott, structured around Work, Play, and About Me.
+A static portfolio site for Joseph Yorke-Westcott, structured around Work, Play, and About Me.
 
 ## Site Structure
 
